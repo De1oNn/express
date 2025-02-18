@@ -7,7 +7,7 @@ const checkPassword = require("./resolvers/checkPassword.js");
 const app = express();
 app.use(express.json());
 
-const PORT = 2000;
+const PORT = 3000;
 
 const readUsers = () => {
   try {
@@ -22,7 +22,7 @@ const readUsers = () => {
 };
 
 const saveUsers = (users) => {
-  console.log("Saving users:", users); // Log the data you're saving
+  console.log("Saving users:", users);
   fs.writeFileSync("./users.json", JSON.stringify(users, null, 2));
 };
 
