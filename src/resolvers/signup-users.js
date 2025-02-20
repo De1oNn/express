@@ -1,4 +1,4 @@
-import { readUsers, saveUsers } from "../utils/userUtils.js"; 
+import { readUsers, saveUsers } from "../utils/userUtils.js";
 
 export const signUpUsers = (req, res) => {
   const { email, password, confirmPassword } = req.body;
@@ -20,4 +20,3 @@ export const signUpUsers = (req, res) => {
 
   res.send("Sign-up successful!");
 };
-
